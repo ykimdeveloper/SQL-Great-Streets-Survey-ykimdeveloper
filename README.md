@@ -104,27 +104,27 @@
 * Install the dependencies and setup retrieve all the database config before starting.
 
 ## Usage
-  > ```python
+```python
 import pyodbc
 server = 'db.database.windows.net'
 database = ''
 username = ''
 password = ''  
 driver= '{ODBC Driver 17 for SQL Server}'
->  ```
-> ```python
+```
+```python
 server = 'localhost:1433'
 database = ''
 username = ''
 password = ''  
 driver= '{ODBC Driver 17 for SQL Server}'
->  ```
-> ```python
+```
+```python
 from sqlalchemy import create_engine
 import pymssql
 engine = create_engine("mssql+pymssql://USERNAME:PASSWORD@SERVER:PORT/DB")
 engine_azure = create_engine("mssql+pymssql://USERNAME:PASSWORD@db.database.windows.net:PORT/DB")
->  ```
+```
 
 ## Roadmap
 
