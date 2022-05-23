@@ -63,16 +63,16 @@
 <summary>Screenshots</summary>
 <br>
 
->  
-> ER DIAGRAM
+
+
 
 |                              AZURE CLOUD DB                              |                               AZURE DB                              |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
 | <img src="docs/images/AZURE.png" title="Home Page" width="100%"> | <img src="docs/images/AZURE-DB.png" title="Login Page" width="100%"> |
 
-|                               ER Diagram                             ||
-| :-------------------------------------------------------------------: ||
-| <img src="docs/images/ER-SQL-STREETS.png" title="Home Page" width="100%"> ||
+|                               ER Diagram                             |
+| :-------------------------------------------------------------------: |
+| <img src="docs/images/ER-SQL-STREETS.png" title="Home Page" width="100%"> |
 
 
 </details>
