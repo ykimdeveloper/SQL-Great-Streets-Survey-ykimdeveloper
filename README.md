@@ -54,23 +54,26 @@
 
 <table><tr><td>
 
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions -- just the ones relevant to your project.
+> This is a continuation of the data analysis project using L.A. city's data 'Great Streets Pedestrian Survey 2015'.  
+> The data shown is already data wrangled and cleaned which is described on my other repo.
+> This project is to demonstrate how to use SQL data with python.
+
 
 <details>
 <summary>Screenshots</summary>
 <br>
 
-> **[?]**
-> Please provide your screenshots here.
+>  
+> ER DIAGRAM
 
-|                               Home Page                               |                               Login Page                               |
+|                              AZURE CLOUD DB                              |                               AZURE DB                              |
 | :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
+| <img src="docs/images/AZURE.png" title="Home Page" width="100%"> | <img src="docs/images/AZURE-DB.png" title="Login Page" width="100%"> |
+
+|                               ER Diagram                             ||
+| :-------------------------------------------------------------------: ||
+| <img src="docs/images/ER-SQL-STREETS.png" title="Home Page" width="100%"> ||
+
 
 </details>
 
@@ -78,26 +81,50 @@
 
 ### Built With
 
-> **[?]**
-> Please provide the technologies that are used in the project.
+* sqlalchemy -  Python SQL toolkit and Object Relational Mapper
+* pyodbc - Module for accessing ODBC databases to be the bridge between SQL and Python
+* pymssql - Module for creating Tables.
+* MS SQL Server - localhost SQL server
+* Azure SQL Server - Windows Cloud server
+* MySQL - localhost SQL server
+
+
 
 ## Getting Started
 
 ### Prerequisites
+* pip install pymssql
+* pip install pyodbc
+* pip install SQLAlchemy
+* download data https://data.lacity.org/Community-Economic-Development/Great-Streets-Pedestrian-Survey-2015/6yv9-t9gq/data
 
-> **[?]**
-> What are the project requirements/dependencies?
 
 ### Installation
 
-> **[?]**
-> Describe how to install and get started with the project.
+* Install the dependencies and setup retrieve all the database config before starting.
 
 ## Usage
-
-> **[?]**
-> How does one go about using it?
-> Provide various use cases and code examples here.
+  > ```python
+import pyodbc
+server = 'db.database.windows.net'
+database = ''
+username = ''
+password = ''  
+driver= '{ODBC Driver 17 for SQL Server}'
+>  ```
+> ```python
+server = 'localhost:1433'
+database = ''
+username = ''
+password = ''  
+driver= '{ODBC Driver 17 for SQL Server}'
+>  ```
+> ```python
+from sqlalchemy import create_engine
+import pymssql
+engine = create_engine("mssql+pymssql://USERNAME:PASSWORD@SERVER:PORT/DB")
+engine_azure = create_engine("mssql+pymssql://USERNAME:PASSWORD@db.database.windows.net:PORT/DB")
+>  ```
 
 ## Roadmap
 
@@ -109,8 +136,7 @@ See the [open issues](https://github.com/ykimdeveloper/sql-great-streets-survey-
 
 ## Support
 
-> **[?]**
-> Provide additional ways to contact the project maintainer/maintainers.
+* ykimdeveloper - message me for any questions
 
 Reach out to the maintainer at one of the following places:
 
@@ -152,9 +178,3 @@ _For more information and to report security issues, please refer to our [securi
 This project is licensed under the **MIT license**.
 
 See [LICENSE](LICENSE) for more information.
-
-## Acknowledgements
-
-> **[?]**
-> If your work was funded by any organization or institution, acknowledge their support here.
-> In addition, if your work relies on other software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.
