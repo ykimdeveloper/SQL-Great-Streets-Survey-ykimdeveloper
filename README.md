@@ -125,6 +125,11 @@ import pymssql
 engine = create_engine("mssql+pymssql://USERNAME:PASSWORD@SERVER:PORT/DB")
 engine_azure = create_engine("mssql+pymssql://USERNAME:PASSWORD@db.database.windows.net:PORT/DB")
 ```
+```python
+from sqlalchemy import create_engine
+engine = create_engine("mysql+mysqldb://USERNAME:PASSWORD@localhost/DB")
+```
+
 
 ## Roadmap
 
