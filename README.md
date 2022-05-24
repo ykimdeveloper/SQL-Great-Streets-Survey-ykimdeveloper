@@ -54,9 +54,9 @@
 
 <table><tr><td>
 
-> This is a continuation of the data analysis project using L.A. city's data 'Great Streets Pedestrian Survey 2015'.  
-> The data shown is already data wrangled and cleaned which is described on my other repo.
-> This project is to demonstrate how to use SQL data with python.
+ This is a continuation of the data analysis project using L.A. city's data 'Great Streets Pedestrian Survey 2015'.  
+ The data shown is already data wrangled and cleaned which is described on my other repo.
+ This project is to demonstrate how to use SQL data with python.
 
 
 <details>
